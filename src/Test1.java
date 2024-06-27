@@ -16,13 +16,15 @@ public class Test1 {
     //when - run the API
     //then - validate the response
 		
+		
+		//Post add place
 		baseURI = "https://rahulshettyacademy.com";
 		
     	String response =  given()
     	.queryParam("key", "qaclick123").header("Content-Type", "application/json")
     	.body(payload.AddPlace())
     	.when()
-    	.post("maps/api/place/add/json?key=qaclick123")
+    	.post("maps/api/place/add/json")
     	.then()
     	.assertThat().log().all()
     	.statusCode(200)
