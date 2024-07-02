@@ -5,7 +5,7 @@
     <classes>
       <class name="file.DynamicJson">
         <methods>
-          <include name="addBook" invocation-numbers="0 1"/>
+          <include name="dltBook"/>
         </methods>
       </class> <!-- file.DynamicJson -->
     </classes>
